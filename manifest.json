@@ -1,0 +1,1089 @@
+{
+ "built": "2026-11-23",
+ "tabs": [
+  "spring",
+  "fall"
+ ],
+ "groups": [
+  "Roost",
+  "Fly-down",
+  "Scatter",
+  "Working",
+  "Close",
+  "Midday",
+  "Listen"
+ ],
+ "backgrounds": [
+  {
+   "id": "roost-flock",
+   "label": "Roost (real flock)",
+   "tabs": [
+    "spring"
+   ],
+   "seconds": 1200,
+   "file": {
+    "path": "audio/turkey-atmo-roost-flock-20min.m4a",
+    "bytes": 14775083,
+    "v": "6380cc45fb"
+   },
+   "credit": {
+    "recordist": "Bruce Lagerquist",
+    "catalogue": "XC586566",
+    "url": "https://xeno-canto.org/586566",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "changes": "cleaned, cut into pieces, re-ordered and layered"
+   }
+  },
+  {
+   "id": "roost-soft",
+   "label": "Roost (soft talk)",
+   "tabs": [
+    "spring"
+   ],
+   "seconds": 1200,
+   "file": {
+    "name": "turkey-atmo-roost-soft-20min.m4a",
+    "bytes": 14660299
+   }
+  },
+  {
+   "id": "hens-feeding",
+   "label": "Hens feeding",
+   "tabs": [
+    "spring"
+   ],
+   "seconds": 1200,
+   "file": {
+    "name": "turkey-atmo-hens-feeding-20min.m4a",
+    "bytes": 14748188
+   }
+  },
+  {
+   "id": "hens-feeding-busy",
+   "label": "Hens feeding (busy)",
+   "tabs": [
+    "spring"
+   ],
+   "seconds": 1200,
+   "file": {
+    "name": "turkey-atmo-hens-feeding-busy-20min.m4a",
+    "bytes": 14762713
+   }
+  },
+  {
+   "id": "fall-flock",
+   "label": "Fall flock (feeding)",
+   "tabs": [
+    "fall"
+   ],
+   "seconds": 1200,
+   "file": {
+    "name": "turkey-atmo-fall-flock-20min.m4a",
+    "bytes": 14680563
+   }
+  }
+ ],
+ "calls": [
+  {
+   "id": "tree-call",
+   "label": "Tree call",
+   "tabs": [
+    "spring"
+   ],
+   "group": "Roost",
+   "hunt": true,
+   "seq": {
+    "file": {
+     "name": "turkey-seq-tree-call.m4a",
+     "bytes": 1800313
+    },
+    "seconds": 111.1,
+    "phrases": [
+     [
+      0.25,
+      1.18
+     ],
+     [
+      12.5,
+      13.96
+     ],
+     [
+      27.54,
+      28.91
+     ],
+     [
+      38.23,
+      39.3
+     ],
+     [
+      47.52,
+      48.69
+     ],
+     [
+      57.55,
+      58.77
+     ],
+     [
+      71.45,
+      72.38
+     ],
+     [
+      82.52,
+      83.6
+     ],
+     [
+      96.56,
+      97.95
+     ],
+     [
+      108.71,
+      109.93
+     ]
+    ]
+   }
+  },
+  {
+   "id": "plain-yelp",
+   "label": "Plain yelp",
+   "tabs": [
+    "spring",
+    "fall"
+   ],
+   "group": "Working",
+   "hunt": true,
+   "seq": {
+    "file": {
+     "name": "turkey-seq-plain-yelp.m4a",
+     "bytes": 1736900
+    },
+    "seconds": 107.4,
+    "phrases": [
+     [
+      0.25,
+      1.72
+     ],
+     [
+      17.36,
+      20.48
+     ],
+     [
+      33.89,
+      37.41
+     ],
+     [
+      46.63,
+      50.1
+     ],
+     [
+      69.47,
+      71.35
+     ],
+     [
+      90.57,
+      93.09
+     ],
+     [
+      104.0,
+      106.17
+     ]
+    ]
+   }
+  },
+  {
+   "id": "excited-yelp",
+   "label": "Excited yelp",
+   "tabs": [
+    "spring"
+   ],
+   "group": "Working",
+   "hunt": true,
+   "seq": {
+    "file": {
+     "name": "turkey-seq-excited-yelp.m4a",
+     "bytes": 1705230
+    },
+    "seconds": 105.1,
+    "phrases": [
+     [
+      0.25,
+      3.81
+     ],
+     [
+      12.69,
+      16.15
+     ],
+     [
+      27.18,
+      29.28
+     ],
+     [
+      39.81,
+      46.45
+     ],
+     [
+      55.64,
+      59.48
+     ],
+     [
+      65.97,
+      71.12
+     ],
+     [
+      77.38,
+      81.27
+     ],
+     [
+      88.7,
+      90.8
+     ],
+     [
+      100.05,
+      103.91
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cluck",
+   "label": "Cluck",
+   "tabs": [
+    "spring",
+    "fall"
+   ],
+   "group": "Working",
+   "hunt": true,
+   "seq": {
+    "file": {
+     "name": "turkey-seq-cluck.m4a",
+     "bytes": 1877566
+    },
+    "seconds": 115.8,
+    "phrases": [
+     [
+      0.25,
+      1.08
+     ],
+     [
+      6.01,
+      7.98
+     ],
+     [
+      12.63,
+      13.3
+     ],
+     [
+      19.94,
+      23.1
+     ],
+     [
+      29.12,
+      30.56
+     ],
+     [
+      35.79,
+      36.85
+     ],
+     [
+      43.19,
+      43.85
+     ],
+     [
+      48.15,
+      48.83
+     ],
+     [
+      53.19,
+      55.18
+     ],
+     [
+      62.03,
+      63.21
+     ],
+     [
+      68.66,
+      69.32
+     ],
+     [
+      75.66,
+      76.32
+     ],
+     [
+      80.97,
+      82.8
+     ],
+     [
+      86.65,
+      87.29
+     ],
+     [
+      91.94,
+      93.37
+     ],
+     [
+      99.43,
+      100.26
+     ],
+     [
+      105.23,
+      107.2
+     ],
+     [
+      113.92,
+      114.6
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cutt",
+   "label": "Cutt",
+   "tabs": [
+    "spring"
+   ],
+   "group": "Working",
+   "hunt": true,
+   "seq": {
+    "file": {
+     "name": "turkey-seq-cutt.m4a",
+     "bytes": 1652033
+    },
+    "seconds": 101.7,
+    "phrases": [
+     [
+      0.27,
+      2.87
+     ],
+     [
+      3.37,
+      6.54
+     ],
+     [
+      7.78,
+      11.05
+     ],
+     [
+      11.66,
+      14.6
+     ],
+     [
+      14.6,
+      18.0
+     ],
+     [
+      18.4,
+      22.1
+     ],
+     [
+      22.64,
+      25.49
+     ],
+     [
+      25.53,
+      27.47
+     ],
+     [
+      27.89,
+      33.7
+     ],
+     [
+      34.81,
+      36.3
+     ],
+     [
+      36.78,
+      41.18
+     ],
+     [
+      41.27,
+      45.41
+     ],
+     [
+      46.22,
+      48.82
+     ],
+     [
+      49.8,
+      51.93
+     ],
+     [
+      51.93,
+      59.16
+     ],
+     [
+      59.48,
+      69.43
+     ],
+     [
+      69.72,
+      70.75
+     ],
+     [
+      70.84,
+      75.37
+     ],
+     [
+      75.86,
+      77.74
+     ],
+     [
+      78.05,
+      82.37
+     ],
+     [
+      82.37,
+      83.13
+     ],
+     [
+      83.14,
+      84.76
+     ],
+     [
+      84.76,
+      89.87
+     ],
+     [
+      89.98,
+      91.12
+     ],
+     [
+      91.58,
+      94.11
+     ],
+     [
+      94.5,
+      96.37
+     ],
+     [
+      96.79,
+      100.38
+     ]
+    ]
+   }
+  },
+  {
+   "id": "aggressive-cutt",
+   "label": "Aggressive cutt",
+   "tabs": [
+    "spring"
+   ],
+   "group": "Working",
+   "hunt": true,
+   "seq": {
+    "file": {
+     "name": "turkey-seq-aggressive-cutt.m4a",
+     "bytes": 1565561
+    },
+    "seconds": 95.9,
+    "phrases": [
+     [
+      0.27,
+      3.27
+     ],
+     [
+      3.27,
+      4.99
+     ],
+     [
+      4.99,
+      8.01
+     ],
+     [
+      8.09,
+      11.6
+     ],
+     [
+      11.68,
+      14.33
+     ],
+     [
+      14.33,
+      17.43
+     ],
+     [
+      17.43,
+      20.72
+     ],
+     [
+      20.72,
+      21.84
+     ],
+     [
+      22.2,
+      23.48
+     ],
+     [
+      23.48,
+      25.15
+     ],
+     [
+      25.15,
+      29.86
+     ],
+     [
+      29.86,
+      31.54
+     ],
+     [
+      31.54,
+      32.41
+     ],
+     [
+      32.41,
+      33.97
+     ],
+     [
+      33.97,
+      35.3
+     ],
+     [
+      35.42,
+      38.14
+     ],
+     [
+      38.48,
+      40.67
+     ],
+     [
+      40.67,
+      44.73
+     ],
+     [
+      44.73,
+      45.58
+     ],
+     [
+      45.58,
+      49.66
+     ],
+     [
+      49.66,
+      52.36
+     ],
+     [
+      52.36,
+      54.88
+     ],
+     [
+      54.88,
+      59.31
+     ],
+     [
+      59.31,
+      60.27
+     ],
+     [
+      60.27,
+      63.06
+     ],
+     [
+      63.06,
+      67.36
+     ],
+     [
+      67.61,
+      68.88
+     ],
+     [
+      68.9,
+      70.14
+     ],
+     [
+      70.14,
+      73.07
+     ],
+     [
+      73.07,
+      74.71
+     ],
+     [
+      74.71,
+      76.87
+     ],
+     [
+      76.87,
+      77.74
+     ],
+     [
+      77.84,
+      80.73
+     ],
+     [
+      80.73,
+      82.44
+     ],
+     [
+      82.44,
+      86.29
+     ],
+     [
+      86.55,
+      91.08
+     ],
+     [
+      91.08,
+      93.14
+     ],
+     [
+      93.14,
+      94.77
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cluck-and-purr",
+   "label": "Cluck & purr",
+   "tabs": [
+    "spring",
+    "fall"
+   ],
+   "group": "Close",
+   "hunt": true,
+   "seq": {
+    "file": {
+     "name": "turkey-seq-cluck-and-purr.m4a",
+     "bytes": 1836618
+    },
+    "seconds": 114.1,
+    "phrases": [
+     [
+      0.02,
+      1.41
+     ],
+     [
+      2.42,
+      3.53
+     ],
+     [
+      4.13,
+      5.52
+     ],
+     [
+      5.91,
+      6.61
+     ],
+     [
+      6.92,
+      10.68
+     ],
+     [
+      11.08,
+      11.92
+     ],
+     [
+      12.54,
+      14.73
+     ],
+     [
+      15.09,
+      15.56
+     ],
+     [
+      17.07,
+      18.02
+     ],
+     [
+      19.36,
+      21.6
+     ],
+     [
+      22.19,
+      22.65
+     ],
+     [
+      23.67,
+      27.29
+     ],
+     [
+      27.62,
+      28.6
+     ],
+     [
+      29.06,
+      30.07
+     ],
+     [
+      30.59,
+      34.44
+     ],
+     [
+      34.78,
+      38.22
+     ],
+     [
+      38.9,
+      42.26
+     ],
+     [
+      42.99,
+      44.49
+     ],
+     [
+      44.99,
+      46.54
+     ],
+     [
+      47.03,
+      47.74
+     ],
+     [
+      49.01,
+      50.47
+     ],
+     [
+      51.33,
+      54.09
+     ],
+     [
+      54.97,
+      55.43
+     ],
+     [
+      56.59,
+      58.96
+     ],
+     [
+      60.12,
+      62.28
+     ],
+     [
+      63.93,
+      65.49
+     ],
+     [
+      65.99,
+      68.01
+     ],
+     [
+      71.81,
+      72.84
+     ],
+     [
+      75.05,
+      75.75
+     ],
+     [
+      77.05,
+      78.97
+     ],
+     [
+      79.62,
+      80.95
+     ],
+     [
+      81.79,
+      83.93
+     ],
+     [
+      84.5,
+      84.99
+     ],
+     [
+      85.8,
+      87.03
+     ],
+     [
+      87.95,
+      89.27
+     ],
+     [
+      89.92,
+      90.48
+     ],
+     [
+      91.9,
+      92.53
+     ],
+     [
+      93.98,
+      94.51
+     ],
+     [
+      94.91,
+      98.16
+     ],
+     [
+      98.4,
+      99.89
+     ],
+     [
+      101.8,
+      103.12
+     ],
+     [
+      103.77,
+      104.99
+     ],
+     [
+      105.68,
+      108.66
+     ],
+     [
+      109.23,
+      111.5
+     ],
+     [
+      112.06,
+      113.7
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kee-kee-run",
+   "label": "Kee-kee run",
+   "tabs": [
+    "fall"
+   ],
+   "group": "Scatter",
+   "hunt": true,
+   "seq": {
+    "file": {
+     "name": "turkey-seq-kee-kee-run.m4a",
+     "bytes": 1898213
+    },
+    "seconds": 117.1,
+    "phrases": [
+     [
+      0.25,
+      2.29
+     ],
+     [
+      11.71,
+      13.97
+     ],
+     [
+      26.88,
+      28.83
+     ],
+     [
+      43.13,
+      44.91
+     ],
+     [
+      60.05,
+      63.19
+     ],
+     [
+      75.32,
+      77.35
+     ],
+     [
+      88.97,
+      91.23
+     ],
+     [
+      102.58,
+      104.55
+     ],
+     [
+      112.8,
+      115.93
+     ]
+    ]
+   }
+  },
+  {
+   "id": "assembly-yelp",
+   "label": "Assembly yelp",
+   "tabs": [
+    "fall"
+   ],
+   "group": "Scatter",
+   "hunt": true,
+   "seq": {
+    "file": {
+     "name": "turkey-seq-assembly-yelp.m4a",
+     "bytes": 1723646
+    },
+    "seconds": 107.3,
+    "phrases": [
+     [
+      0.25,
+      6.67
+     ],
+     [
+      24.34,
+      27.68
+     ],
+     [
+      48.26,
+      50.72
+     ],
+     [
+      62.11,
+      66.61
+     ],
+     [
+      81.59,
+      88.02
+     ],
+     [
+      102.83,
+      106.13
+     ]
+    ]
+   }
+  },
+  {
+   "id": "owl-hoot",
+   "label": "Owl hoot",
+   "tabs": [
+    "spring"
+   ],
+   "group": "Roost",
+   "hunt": true,
+   "takes": [
+    {
+     "name": "turkey-call-owl-hoot.m4a",
+     "bytes": 182817,
+     "seconds": 10.25
+    }
+   ]
+  },
+  {
+   "id": "fly-down-cackle",
+   "label": "Fly-down cackle",
+   "tabs": [
+    "spring"
+   ],
+   "group": "Fly-down",
+   "hunt": true,
+   "takes": [
+    {
+     "name": "turkey-call-fly-down-cackle.m4a",
+     "bytes": 122591,
+     "seconds": 4.98
+    }
+   ]
+  },
+  {
+   "id": "crow",
+   "label": "Crow",
+   "tabs": [
+    "spring"
+   ],
+   "group": "Midday",
+   "hunt": true,
+   "takes": [
+    {
+     "name": "turkey-call-crow-1.m4a",
+     "bytes": 113593,
+     "seconds": 5.3
+    },
+    {
+     "name": "turkey-call-crow-2.m4a",
+     "bytes": 117180,
+     "seconds": 5.2
+    }
+   ]
+  },
+  {
+   "id": "gobble",
+   "label": "Gobble",
+   "tabs": [
+    "spring",
+    "fall"
+   ],
+   "group": "Listen",
+   "hunt": false,
+   "takes": [
+    {
+     "name": "turkey-call-gobble.m4a",
+     "bytes": 255723,
+     "seconds": 11.48
+    }
+   ]
+  },
+  {
+   "id": "putt",
+   "label": "Putt (alarm)",
+   "tabs": [
+    "spring",
+    "fall"
+   ],
+   "group": "Listen",
+   "hunt": false,
+   "takes": [
+    {
+     "name": "turkey-call-putt.m4a",
+     "bytes": 168724,
+     "seconds": 9.05
+    }
+   ]
+  }
+ ],
+ "listen": [
+  {
+   "id": "listen-hen",
+   "label": "Real hen (clucks)",
+   "tabs": [
+    "spring",
+    "fall"
+   ],
+   "group": "Listen",
+   "hunt": false,
+   "file": {
+    "path": "audio/turkey-hen-clucks-yelps-XC767336-cleaned-4min.mp3",
+    "bytes": 4271615,
+    "v": "98e65ec981"
+   },
+   "credit": {
+    "recordist": "Valerie Heemstra",
+    "catalogue": "XC767336",
+    "url": "https://xeno-canto.org/767336",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "changes": "trimmed, cleaned and looped"
+   },
+   "check": "Check by ear before trusting it: the bird was not seen by the recordist, the long high notes look like a songbird, and the steady one-a-second clucks could be alarm putts."
+  },
+  {
+   "id": "listen-roost",
+   "label": "Real roost",
+   "tabs": [
+    "spring",
+    "fall"
+   ],
+   "group": "Listen",
+   "hunt": false,
+   "file": {
+    "path": "audio/turkey-roost-tree-calls-XC586566-loop-5min.mp3",
+    "bytes": 5481630,
+    "v": "977b90f37e"
+   },
+   "credit": {
+    "recordist": "Bruce Lagerquist",
+    "catalogue": "XC586566",
+    "url": "https://xeno-canto.org/586566",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "changes": "trimmed, cleaned and looped"
+   }
+  },
+  {
+   "id": "listen-gobbles",
+   "label": "Real gobbles",
+   "tabs": [
+    "spring",
+    "fall"
+   ],
+   "group": "Listen",
+   "hunt": false,
+   "file": {
+    "path": "audio/turkey-gobble-4-toms-XC136045-loop-5min.mp3",
+    "bytes": 5249665,
+    "v": "95adf2edff"
+   },
+   "credit": {
+    "recordist": "Jonathon Jongsma",
+    "catalogue": "XC136045",
+    "url": "https://xeno-canto.org/136045",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "changes": "trimmed, cleaned and looped"
+   }
+  }
+ ]
+}

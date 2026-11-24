@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Turkey">
+<meta name="format-detection" content="telephone=no">
+<title>Turkey Soundboard</title>
+<link rel="manifest" href="app.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app" class="app">
+
+  <div id="legal" class="legal">
+    <div id="lg-l" class="lg-l">Legal light</div>
+    <div id="lg-t" class="lg-t"></div>
+  </div>
+
+  <div class="tabs">
+    <button type="button" id="b-spring" class="tab">Spring</button>
+    <button type="button" id="b-fall" class="tab">Fall</button>
+  </div>
+
+  <section id="bg" class="bg idle">
+    <div class="bg-head"><span id="bg-l" class="bg-l">Background</span><span id="bg-t" class="bg-t"></span></div>
+    <div id="bg-btns" class="bg-btns"></div>
+  </section>
+
+  <section id="pad" class="pad"></section>
+
+  <section id="last" class="last">
+    <div class="last-l"><span id="last-a" class="last-a"></span><span id="last-b" class="last-b"></span></div>
+    <button type="button" id="b-called" class="small chip">Called</button>
+    <button type="button" id="b-gap" class="small chip"></button>
+    <button type="button" id="b-rec" class="small chip">Record</button>
+  </section>
+
+  <section class="ctl">
+    <button type="button" id="b-hunt" class="btn hold mode"><span class="fill"></span><span class="lbl">Hunt</span><span class="sub"></span></button>
+    <button type="button" id="b-practice" class="btn hold mode"><span class="fill"></span><span class="lbl">Practice</span><span class="sub"></span></button>
+    <button type="button" id="b-stop" class="btn hold"><span class="fill"></span><span class="lbl">Stop</span><span class="sub"></span></button>
+  </section>
+
+  <button type="button" id="b-mute" class="btn hold mute"><span class="fill"></span><span class="lbl">Mute</span><span class="sub"></span></button>
+
+  <footer class="foot">
+    <span id="saved" class="saved"></span>
+    <button type="button" id="b-setup" class="small">Setup</button>
+  </footer>
+
+</div>
+
+<div id="arm" class="arm">
+  <div class="arm-box">
+    <div class="arm-title">Turkey Soundboard</div>
+    <button type="button" id="b-arm-hunt" class="btn arm-btn"><span class="lbl">Hunt</span><span class="sub"></span></button>
+    <button type="button" id="b-arm-practice" class="btn arm-btn"><span class="lbl">Practice</span><span class="sub">a tap plays a call</span></button>
+    <div id="arm-note" class="arm-note">Tap one to arm. Nothing plays until you start a sound.</div>
+    <div id="arm-saved" class="arm-note"></div>
+  </div>
+</div>
+
+<div id="setup" class="setup" hidden>
+  <div class="setup-head"><span>Setup</span><button type="button" id="b-done" class="small">Done</button></div>
+  <div class="setup-body">
+    <div class="row">
+      <div class="row-lbl">Sounds on this phone</div>
+      <div id="snd-count" class="row-note"></div>
+      <label class="act pick"><span id="pick-l">Add sounds from this phone</span><input id="pick" type="file" multiple hidden></label>
+      <div id="snd-note" class="row-note"></div>
+      <div class="row-note">Most of the sounds are not on the web page. Copy the import pack to your drive once, then press the button, choose Choose Files, and pick the one zip file (or every file in the folder). They stay on this phone.</div>
+      <div class="pair">
+        <button type="button" id="b-redo" class="small">Download the page's sounds again</button>
+        <button type="button" id="b-forget" class="small">Remove the added sounds</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-lbl">Legal light</div>
+      <button type="button" id="b-locate" class="act">Use this phone's location</button>
+      <div id="lg-status" class="row-note"></div>
+      <div class="row-note">Or set the place by hand, to the nearest tenth of a degree. A dropped pin in the phone's Maps shows both numbers.</div>
+      <div class="byhand">
+        <label>Latitude (north)<input id="lg-lat" type="text" inputmode="decimal" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="41.9"></label>
+        <label>Longitude (west)<input id="lg-lon" type="text" inputmode="decimal" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="87.6"></label>
+        <button type="button" id="b-byhand" class="small">Save</button>
+      </div>
+      <div class="row-note">Starts this many minutes before sunrise</div>
+      <div class="step" data-key="lgBefore"></div>
+      <div class="row-note">The day ends</div>
+      <div class="seg" data-key="lgEndMode"></div>
+      <div id="lg-sun">
+        <div class="row-note">Ends this many minutes after sunset</div>
+        <div class="step" data-key="lgAfter"></div>
+      </div>
+      <div id="lg-clock" class="byhand" hidden>
+        <label>Closing time, for a season that ends at midday<input id="lg-end" type="time" step="300"></label>
+      </div>
+      <div class="row-note">Worked out on this phone from the date and the saved location, then set about a minute to the safe side. The location stays on this phone. It is a guide: the state's rule book governs, so set these to match it.</div>
+    </div>
+    <div class="row">
+      <div class="row-lbl">Hold for a sound in Hunt</div>
+      <div class="seg" data-key="holdCall"></div>
+      <div class="row-note">Calls and backgrounds. Most calls run about two minutes; the same hold on the button again ends one. The same hold on a background that is on turns it off, and a call playing over it keeps going. Unmute, and going from Hunt to Practice, use the same hold. In Practice everything is a plain tap.</div>
+    </div>
+    <div class="row">
+      <div class="row-lbl">Hold to Stop</div>
+      <div class="seg" data-key="hold"></div>
+    </div>
+    <div class="row">
+      <div class="row-lbl">The sound starts</div>
+      <div class="seg" data-key="startOn"></div>
+      <div class="row-note">With "When I let go" you can keep a full button held and pick the moment. Slide off the button to cancel.</div>
+    </div>
+    <div class="row">
+      <div class="row-lbl">Practice: the silence after a call</div>
+      <div class="seg" data-key="gap"></div>
+      <div class="row-note">In Practice a long call is given a phrase at a time, with the silence after each. Never shorter than one second. With Record on, the phone listens during the silence and then plays the phrase and your answer back to back. Nothing recorded is kept or sent anywhere.</div>
+    </div>
+    <div class="row">
+      <div class="row-lbl">Screen</div>
+      <div class="seg" data-key="red"></div>
+    </div>
+    <div class="row">
+      <div class="row-lbl">Phone set to silent</div>
+      <div class="seg" data-key="bed"></div>
+      <div class="row-note">If the background plays with the phone on silent but the calls do not, choose Always. It keeps a silent track running while the page is on screen.</div>
+    </div>
+    <div class="row">
+      <div class="row-lbl">Long calls in Hunt play on</div>
+      <div class="seg" data-key="via"></div>
+      <div class="row-note">"Second player" is the normal setting: the call runs over the background and keeps going with the phone locked. If starting a call ever pauses the background, choose "Call player", and keep the phone unlocked while a call runs.</div>
+    </div>
+    <div class="row">
+      <div class="row-lbl">If a background will not play</div>
+      <div class="seg" data-key="src"></div>
+      <div class="row-note">"From memory" is the normal setting. Try "Direct" only if a saved background stays silent.</div>
+    </div>
+    <div class="row">
+      <div class="row-lbl">About the recordings</div>
+      <div id="credits" class="row-note credits"></div>
+      <pre id="diag" class="diag"></pre>
+    </div>
+  </div>
+</div>
+
+<audio id="player" preload="auto"></audio>
+<audio id="seq" preload="auto"></audio>
+<audio id="bed" preload="auto" loop></audio>
+<script src="app.js"></script>
+</body>
+</html>
